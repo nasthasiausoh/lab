@@ -69,15 +69,20 @@ SSH keys are unique to each user. Having one essentially tells Git/ GitHub that 
 
 
 ### Git steps:
-- `git init` -  Initialising the repo (this defines our repository).  
-- `git add` – Stages the file to let Git know you want to record the modifications/changes made to the file. 
-- `git commit` – Commits the staged modifications/changes in the history.
+- First ensure you are in the correct directory and folder. In this case it is done using: `cd bnta_work/week_01/day_1/lab `
+- Then use `git init` - Initialising the repo (this defines our repository).
+- 'Link' the repository that you created using the origin/url. In this instance: `git remote add origin git@github.com:nasthasiausoh/lab.git `
+- Use `git add` followed by the file name in this instance `terminal_cheatsheet.md/src/main/java/org/.DS_Store terminal_cheatsheet.md/`
+  - This stages the file to let Git know you want to record the file and/or the modifications made to the file. 
+- Then use `git status` to view the changes to be committed.
+- Afterwards, use `git commit` – Commits the staged modifications/changes in the history.
   - Essentially saving what you have done and then the file will be considered as unmodified. 
   ```
    Note: When using `git commit` you must add a message to it. For example:
-       git commit -m"adding facts about penguins" 
+       git commit -m"adding terminal_cheatsheet.md" 
       (i.e. a comment on the code).
   ```
+- Use `git log` to check if your `commit` has worked. To close the window pop out, press the `Q` key.
 - `git push `– Sends your newly modified/changed code to Github and safely stores it for your own and others’ use.
 
 ### Useful tips while doing this:
